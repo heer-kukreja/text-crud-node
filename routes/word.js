@@ -1,0 +1,13 @@
+const express = require("express");
+var router = express();
+const create = require("../controller/word");
+const view = require("../controller/word");
+const update = require("../controller/word");
+const remove = require("../controller/word");
+const bodyparser = require("body-parser");
+router.use(bodyparser.json());
+router.post("/create", create.create);
+router.get("/", view.view);
+router.put("/:id", update.update);
+router.delete("/delete/:id", remove.remove);
+module.exports = router;
