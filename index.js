@@ -6,6 +6,7 @@ var app = express();
 
 var allowedOrigins = [
   "http://localhost:3000",
+  "https://text-crud-react.herokuapp.com",
   "https://text-crud.herokuapp.com",
 ];
 
