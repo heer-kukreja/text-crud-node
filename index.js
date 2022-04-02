@@ -5,7 +5,7 @@ var cors = require("cors");
 var app = express();
 
 var allowedOrigins = [
-  "http://localhost:8000",
+  "http://localhost:3000",
   "https://text-crud.herokuapp.com",
 ];
 
